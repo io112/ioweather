@@ -1,0 +1,32 @@
+<div class="div-low">
+        <h1 class="heading">Погода в городе {{ city }}</h1>
+        <div class="div-block-4"><img src="../static/images/{{ weather }}.png" id="wear-img" srcset="../static/../static/images/{{ weather }}.png 500w, ../static/../static/images/{{ weather }}.png 650w" sizes="(max-width: 479px) 55vw, (max-width: 767px) 28vw, (max-width: 991px) 26vw, 17vw" alt="" class="wear">
+          <div class="div-block-5">
+            <div class="text-block">{{ weather_recommendations }}</div>
+            <div class="div-block-6">
+              <div class="weather-res"><img src="http://openweathermap.org/img/wn/{{ now_icon }}@2x.png" alt="">
+                <div class="text-div">
+                  <div class="temp">Сейчас</div>
+                  <div class="temp">{{ now_temp }} C°</div>
+                  <div class="weather-desc">{{ now_desc }}</div>
+                </div>
+              </div>
+              <div class="weather-res"><img src="http://openweathermap.org/img/wn/{{ icon1 }}@2x.png" alt="">
+                <div class="text-div">
+                  <div class="temp">{{ time1 }}</div>
+                  <div class="temp">{{ temp1 }} C°</div>
+                  <div class="weather-desc">{{ desc1 }}</div>
+                </div>
+              </div>
+              <div class="weather-res"><img src="http://openweathermap.org/img/wn/{{ icon2 }}@2x.png" alt="">
+                <div class="text-div">
+                  <div class="temp">{{ time2 }}</div>
+                  <div class="temp">{{ temp2 }} C°</div>
+                  <div class="weather-desc">{{ desc2 }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="low"></div>
